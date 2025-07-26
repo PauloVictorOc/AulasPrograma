@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+h2{
+    color: darkred;
+    text-align: center;
+}
+h1#principal{
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+}
+.basico{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+.intermediario{
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+}
+.avancado{
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 5px;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: justify;}

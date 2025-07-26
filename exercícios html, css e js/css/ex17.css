@@ -1,0 +1,46 @@
+
+        body {
+            font-family: cascade system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            /*
+            Medidas absolutas:
+            cm - Centímetros
+            mm - Milímetros
+            in - Polegadas
+            px - Pixels (1/96 de polegada)
+            pt - Pontos (1/72 de polegada)
+            pc - Picas (1/6 de polegada);
+
+            Medidas relativas:
+            em - Tamanho da fonte do elemento pai;
+            ex - Tamanho da letra "x" do elemento pai;
+            ch - Tamanho do caractere "0" do elemento pai;
+            rem - Tamanho da fonte do elemento raiz (html);
+            vw - 1% da largura da viewport (tela);
+            vh - 1% da altura da viewport (tela);
+            vmin - 1% da menor dimensão da viewport (tela);
+            vmax - 1% da maior dimensão da viewport (tela)
+            % - Percentual do tamanho do elemento pai;
+            
+            tipos Fontes:
+            width - Largura da fonte;
+            weight - Espessura da fonte;
+            height - Altura da fonte;
+            style - Estilo da fonte
+            short-hand - Abreviação de fontes;
+
+
+            */
+        /*
+        font-size: 16px; Tamanho da fonte 
+        font-weight: 100; Espessura da fonte 
+        text-decoration: none;  Decoração do texto
+        
+        */
+        
+        }
+        h1{
+             font: italic bolder 3em 'Courier New', Courier, monospace;
+        }
+        h2{
+            font: bold 2em 'Work Sans', sans-serif;
+        }
