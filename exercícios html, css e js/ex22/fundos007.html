@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Para centralizar uma caracteristica, precisa de um container*/
+        #container{
+            /*position:relative;*/
+            position:relative;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+
+            height: 500px;
+            padding: 10px;
+            background-color: peru;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: whitesmoke;
+
+            top: 50%;
+            left: 50%;
+
+
+            /* mover o conteudo dentro do container e manter ele centralizado com valores negativos(da esquerda e para cima) ou positivos(da direita e para baixo) */
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+
+        </article>
+    </section>
+</body>
+</html>
