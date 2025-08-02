@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Sunuwar&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: "Google Sans Code", monospace;;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Libertinus Sans', sans-serif;
 }
@@ -24,6 +24,10 @@ header{
     text-align: center;
     font-weight: bold;
     color: white;
+    background-image: url('../imagens/background000.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
 }
 header > h1{
     padding-top: 50px;
@@ -50,18 +54,33 @@ section{
     font-family: var(--fonte3);
     font-size: 2.9vw;
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
-section.imgaem{
+section.imagem{
     background-color: darkgrey;
-    color:black
+    color:white;
+    box-shadow: inset 1px 1px 2px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 section.imagem > p{
         display: inline-block;
         padding: 5px;
-        background-color: rgba(0, 0, 0, 0.253);
+        background-color: rgba(0, 0, 0, 0.368);
+        color: white;
 }
 footer{
     background-color: black;
