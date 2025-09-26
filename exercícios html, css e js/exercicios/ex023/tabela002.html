@@ -11,6 +11,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -18,6 +19,11 @@
         }
         thead, tfoot{
             background-color: lightgray;
+        }
+        thead > tr > th{
+          position: sticky;
+          top: -1px; /* Fixa o cabeçalho no topo da tabela */
+          background-color: lightgray;
         }
         caption{
             caption-side: bottom;
