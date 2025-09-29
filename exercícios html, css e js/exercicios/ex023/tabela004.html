@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 2px 5px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .genero1{
+            background-color: lightpink;
+        }
+        .genero2{
+            background-color: lightblue;
+        }
+        .titulo1{
+            background-color: lightgreen;
+        }
+        .titulo2{
+            background-color: lightcoral;
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: lightgray;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <t1>Exercícios em Tabelas</t1>
+    <table>
+        <tfoot>
+            <tr>
+                <td colspan="4" scope="row">Tabela de Filmes Favoritos</td>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <caption>Filmes Favoritos de Homens e Mulheres</caption>
+        <tr>
+            <th scope="col">Grupos</th>
+            <th class="titulo1" scope="col">Nomes</th>
+            <th colspan="3" class="titulo2" scope="colgroup">Filmes</th>
+        </tr>
+        <tr>
+            <th rowspan="3"  class="genero1" scope="rowgroup">Mulheres</th>
+            <td>Maria Rosario</td>
+            <td>Vingadores</td>
+            <td>Viagem das amigas</td>
+            <td>O diabo veste Prada</td>
+        </tr>
+        <tr>
+            <td>Beatriz Santos</td>
+            <td>Hulk</td>
+            <td>Incepcion</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Cláudia</td>
+            <td>Obilivion</td>
+            <td>Matrix</td>
+            <td>Punisher</td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="genero2" scope="rowgroup">Homens</th>
+            <td>João Pedro</td>
+            <td>Vingadores</td>
+            <td>Toy story</td>
+            <td>Lucas e os Minimois</td>
+        </tr>
+        <tr>
+            <td>Rafael Garcia</td>
+            <td>Hakers</td>
+            <td>Efeito borboleta</td>
+            <td>O senhor dos anéis</td>
+        </tr>
+        <tr>
+            <td>Francisco Galo</td>
+            <td>Dragon Quest</td>
+            <td>O Hobbit</td>
+            <td>Spider-Man</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: separate;
+            width: 50%;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: lightblue;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Desafio 14</title>
+</head>
+<body>
+    <h1> Tabela Desafio 14</h1>
+    <table>
+        <caption>Notas dos Professores por Área</caption>
+        <tr>
+        <th rowspan="2" scope="rowgroup">Área</th>
+        <th rowspan="2" colspan="2" scope="rowgroup">Professores e Desciplinas</th>
+        <th colspan="2" scope="rowgroup">Notas</th>
+        <th rowspan="2" scope="rowgroup">Média</th>
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="colgroup">Exatas</td>
+            <td>Roberto Coelho</td>
+            <td>Matemática</td>
+            <td>8.0</td>
+            <td>7.5</td>
+            <td>7.75</td>
+        </tr>
+        <tr>
+            <td>Jefferson Santos</td>
+            <td>Física</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>8.75</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Química</td>
+            <td>7.0</td>
+            <td>6.5</td>
+            <td>6.75</td>
+        </tr>
+        <tr>
+            <th colspan="5"> Total em Exatas</th>
+            <td>7.75</td>
+        </tr>
+        <tr>
+            <td rowspan="3" scope="colgroup">Humanas</td>
+            <td>Cláudia Lima</td>
+            <td>História</td>
+            <td>8.5</td>
+            <td>9.0</td>
+            <td>8.75</td>
+        </tr>
+        <tr>
+            <td>Marcos Paulo</td>
+            <td>Geografia</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>7.75</td>
+        </tr>
+        <tr>
+            <td>Fernanda Souza</td>
+            <td>Filosofia</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>8.75</td>
+        </tr>
+        <tr>
+            <th colspan="5"> Total em Humanas</th>
+            <td>8.08</td>
+        </tr>
+    </table>
+</body>
+</html>
