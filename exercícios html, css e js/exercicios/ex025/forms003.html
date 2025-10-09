@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            background-color: rgb(220, 220, 220);
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            margin: auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome"> Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Digite seu nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" placeholder="0.0" value="=.0">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="periodo" id="imes" value="5" required>
+        </p>
+        <p>
+            <Label for="imes">Dia da Prova</Label>
+            <input type="week" name="diaprova" id="isemana" value="2024-W25" required>
+        </p>
+        <p>
+            <label for="iprova">Hora da Prova:</label>
+            <input type="time" name="horaprova" id="iprova" value="14:30" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
