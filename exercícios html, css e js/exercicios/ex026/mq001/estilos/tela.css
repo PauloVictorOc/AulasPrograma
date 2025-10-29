@@ -1,0 +1,22 @@
+@charset "UtF-8";
+/* Estilos para tela */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+menu ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+menu li{
+    display: inline-block;
+    padding: 14px 16px;
+    color: white;
+    cursor: pointer;
+}
