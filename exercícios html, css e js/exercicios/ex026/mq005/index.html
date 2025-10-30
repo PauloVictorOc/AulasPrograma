@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1> 
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2> Testando Media Query </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex ullam iure beatae dignissimos repudiandae sed. Cum voluptates dolore, ipsam earum numquam omnis. Consectetur, modi repudiandae eaque inventore atque corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad, assumenda dolorum autem esse provident! Nostrum, illum cum. Explicabo atque ea reiciendis quibusdam culpa? Numquam quae nisi incidunt sint ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex ullam iure beatae dignissimos repudiandae sed. Cum voluptates dolore, ipsam earum numquam omnis. Consectetur, modi repudiandae eaque inventore atque corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad, assumenda dolorum autem esse provident! Nostrum, illum cum. Explicabo atque ea reiciendis quibusdam culpa? Numquam quae nisi incidunt sint ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex ullam iure beatae dignissimos repudiandae sed. Cum voluptates dolore, ipsam earum numquam omnis. Consectetur, modi repudiandae eaque inventore atque corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ad, assumenda dolorum autem esse provident! Nostrum, illum cum. Explicabo atque ea reiciendis quibusdam culpa? Numquam quae nisi incidunt sint ipsam.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display= 'block'
+            } else {
+                itens.style.display= 'none'
+            }
+        }
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display= 'none'
+            } else {
+                itens.style.display= 'block'
+            } 
+        }
+    </script>
+</body>
+</html>
