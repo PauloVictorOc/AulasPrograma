@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: lightgray;
     height: 100vh;
@@ -16,19 +16,22 @@ header{
     color: white;
     padding: 10px;
 
-    justify-content: space-between;
-    flex-flow: row wrap;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
-    border: 1px dotted black;
-    flex: 0 0 200px
+    /* border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px black;
 }
 header > nav{
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-end;
 
 }
 header > nav > a {
@@ -37,19 +40,20 @@ header > nav > a {
     text-decoration: none;
     padding: 10px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
 }
 header> nav > a:hover{
     background-color: gray;
     color: black;
-    font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 main{
     background-color: white;
-    margin: 10px;
     padding: 10px;
-    border-radius: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
 }
+
 
