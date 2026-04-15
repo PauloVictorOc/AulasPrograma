@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na Pratica</title>
+    <style>
+       div.container{
+            border: 3px solid black;
+            display: grid;
+            height: 250px;
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+            gap: 10px;
+            place-items: normal normal;
+            place-content: normal normal;
+            /* grid-gap: deixou de ser usado e substituído por gap(grid-gap não foi desativado) */
+       }
+         div.item{
+                border: 1px solid blue;
+                padding: 5px;
+                text-align: center;
+         }
+         /* 
+         grid-auto-columns: auto auto auto;
+            grid-auto-rows: auto auto auto;
+            place-items: configura o alinhamento dos itens em uma única propriedade, substituindo align-items e justify-items.
+            place-content: configura o alinhamento do conteúdo em uma única propriedade, substituindo align-content e justify-content.
+
+            para substuir grid-auto-columns e grid-auto-rows podemos usar o grid-template().
+
+            podemos usar o repeat() para repetir um valor, por exemplo: grid-template(3, auto)/ (3, 100px);
+            para dividir um grid em 3 colunas de 100px cada, podemos usar grid-template-columns: 1fr 1fr 1fr, ou grid-template-columns: repeat(3, 1fr); (fr é uma unidade de medida que representa uma fração do espaço disponível no grid);
+
+            podemos colocar fraçoes fixas em templates: grd-template-columns: 100px 20% 1fr 1fr; (100px para a primeira coluna, 20% para a segunda coluna e o restante do espaço dividido igualmente entre as duas últimas colunas);
+         */
+       </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <!-- align = vertical, justify = horizontal -->
+     <!-- align-items: start(direita), end(esquerda), center(meio), stretch (alinhamento normal) -->
+     <!-- align-content: space-between, space-evenly, space-around e stretch(espaçamento normal) -->
+      <!-- align-items: start, end, center e stretch (alinhamento normal) -->
+       <!-- justify-content: start(direita), end(esquerda), center(meio), space-between, space-evenly e space-around -->
+        <!-- justify-items: start(direita), end(esquerda), center(meio), space-between, space-evenly e space-around -->
+    
+</body>
+</html>
