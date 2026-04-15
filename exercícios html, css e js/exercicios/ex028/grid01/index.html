@@ -23,6 +23,19 @@
                 padding: 5px;
                 text-align: center;
          }
+         /* 
+         grid-auto-columns: auto auto auto;
+            grid-auto-rows: auto auto auto;
+            place-items: configura o alinhamento dos itens em uma única propriedade, substituindo align-items e justify-items.
+            place-content: configura o alinhamento do conteúdo em uma única propriedade, substituindo align-content e justify-content.
+
+            para substuir grid-auto-columns e grid-auto-rows podemos usar o grid-template().
+
+            podemos usar o repeat() para repetir um valor, por exemplo: grid-template(3, auto)/ (3, 100px);
+            para dividir um grid em 3 colunas de 100px cada, podemos usar grid-template-columns: 1fr 1fr 1fr, ou grid-template-columns: repeat(3, 1fr); (fr é uma unidade de medida que representa uma fração do espaço disponível no grid);
+
+            podemos colocar fraçoes fixas em templates: grd-template-columns: 100px 20% 1fr 1fr; (100px para a primeira coluna, 20% para a segunda coluna e o restante do espaço dividido igualmente entre as duas últimas colunas);
+         */
        </style>
 </head>
 <body>
