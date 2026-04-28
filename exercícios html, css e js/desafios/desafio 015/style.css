@@ -1,0 +1,27 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px
+}
+.box1 {
+    background-color: red;
+    grid-area: 1 / 1 / 1 / 6;
+}
+.box2 {
+    background-color: green;
+    grid-area: 2 / 1 / 2 / 6;
+}
+.box3 {
+    background-color: blue;
+    grid-area: 3 / 1 / 6 / 5;
+}
+.box4 {
+    background-color: yellow;
+    grid-area: 3 / 5 / 6 / 6;
+}
+.box5 {
+    background-color: purple;
+    grid-area: 6 / 1 / 6 / 6;
+}
